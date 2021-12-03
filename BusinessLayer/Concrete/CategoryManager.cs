@@ -10,7 +10,7 @@ using EntityLayer.Concrete;
 namespace BusinessLayer.Concrete
 {
     public class CategoryManager
-    { 
+    {
         GenericRepository<Category> repo = new GenericRepository<Category>();
         public List<Category> GetAllBL()
         {
@@ -26,9 +26,10 @@ namespace BusinessLayer.Concrete
             else
             {
                 repo.Insert(p);
+
             }
         }
     }
-    
+
 }
 
